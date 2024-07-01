@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle füllen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Erzeugung und Übertragung des Schlüssels</h1>
+    <p><b>Hinweis:</b> <i>Achte bei der Erzeugung der Zufallsfolge darauf, alle Basiszustände zu verwenden und keine Muster zu generieren.</i></p>
+    <br>
+    <div class="flexbox">
+        <div id="tableContainer1">
+            <table id="controlPanel">
+                <thead>
+                    <tr>
+                        <th><h3>+-Basis</h3></th>
+                        <th><h3>x-Basis</h3></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button type="button" id="+0">&#8596;</button></td>
+                        <td><button type="button" id="x0">&#8599;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" id="+1">&#8597;</button></td>
+                        <td><button type="button" id="x1">&#8598;</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" id="compare">Austausch Messbasen</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" id="reset">Reset</button> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="tableContainer2">
+        <h3>Sender</h3>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th class="index">Nr</th>
+                    <th class="base">Basis</th>
+                    <th class="result">Ergebnis</th>
+                    <th class="signal">Signal</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+
+        <div id="tableContainer3">
+        <h3>Empfänger</h3>
+        <table id="receiverTable">
+            <thead>
+                <tr>
+                    <th class="index">Nr</th>
+                    <th class="base">Basis</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
