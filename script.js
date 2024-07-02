@@ -84,22 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     buttonx0.addEventListener('click', () => {
-        addNewResult(photonIndex, "x", "\u2197", "0");
+        addNewResult(photonIndex, "x", "\u2197\uFE0E", "0");
         photonIndex += 1;
     });
 
     buttonx1.addEventListener('click', () => {
-        addNewResult(photonIndex, "x", "\u2196", "1");
+        addNewResult(photonIndex, "x", "\u2196\uFE0E", "1");
         photonIndex += 1;
     });
 
     button_0.addEventListener('click', () => {
-        addNewResult(photonIndex, "+", "\u2194", "0");
+        addNewResult(photonIndex, "+", "\u2194\uFE0E", "0");
         photonIndex += 1;
     });
 
     button_1.addEventListener('click', () => {
-        addNewResult(photonIndex, "+", "\u2195", "1");
+        addNewResult(photonIndex, "+", "\u2195\uFE0E", "1");
         photonIndex += 1;
     });
 
